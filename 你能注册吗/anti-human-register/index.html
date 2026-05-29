@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云帆科技 — 企业协作与数据管理平台</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="landing">
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="nav-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="#2563eb"/><path d="M7 18l4-9 4 5 3-7 3 11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-text">云帆科技<span class="brand-sub">YUNFAN</span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#products">产品</a>
+          <a href="#solutions">解决方案</a>
+          <a href="#customers">客户案例</a>
+          <a href="#pricing">定价</a>
+          <a href="#" id="aboutUsLink">关于我们</a>
+          <a href="#" class="nav-login">登录</a>
+          <button type="button" class="btn-nav-profile hidden" id="profileBtn">个人中心</button>
+          <button type="button" class="btn-nav-register" id="openRegisterBtn">免费注册</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">🏆 2025 年度企业协作平台 · 用户满意度 4.8</div>
+          <h1>让团队协作更简单，<br>让数据驱动每一个决策</h1>
+          <p class="hero-lead">云帆科技是一体化企业协作与数据管理平台，集项目管理、即时沟通、文档协同与 BI 分析于一体。已有 <strong>12,847</strong> 家团队在使用，覆盖制造、零售、金融、互联网等行业。</p>
+          <div class="hero-actions">
+            <button type="button" class="btn-primary btn-lg" id="heroRegisterBtn">免费注册 · 15 天试用</button>
+            <button type="button" class="btn-outline btn-lg" id="heroDemoBtn">预约产品演示</button>
+          </div>
+          <p class="hero-note">无需信用卡 · 支持 500 人以下团队快速部署 · 数据存储于国内机房</p>
+          <div class="hero-stats">
+            <div><strong>99.95%</strong><span>服务可用性 SLA</span></div>
+            <div><strong>ISO 27001</strong><span>信息安全认证</span></div>
+            <div><strong>7×24</strong><span>专属客户成功</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="browser-frame">
+            <div class="browser-chrome">
+              <span></span><span></span><span></span>
+              <div class="browser-url">app.yunfan.tech/workspace/overview</div>
+            </div>
+            <div class="dashboard-mock">
+              <aside class="dash-sidebar">
+                <div class="dash-logo">云帆</div>
+                <div class="dash-nav-item active">概览</div>
+                <div class="dash-nav-item">项目</div>
+                <div class="dash-nav-item">文档</div>
+                <div class="dash-nav-item">数据</div>
+              </aside>
+              <main class="dash-main">
+                <div class="dash-header">
+                  <span>工作台 · Q2 运营看板</span>
+                  <span class="dash-tag">实时同步</span>
+                </div>
+                <div class="dash-kpis">
+                  <div class="dash-kpi"><em>进行中项目</em><strong>24</strong><small>↑ 12%</small></div>
+                  <div class="dash-kpi"><em>本周完成任务</em><strong>186</strong><small>↑ 8%</small></div>
+                  <div class="dash-kpi"><em>团队活跃率</em><strong>94%</strong><small>稳定</small></div>
+                </div>
+                <div class="dash-chart-area">
+                  <div class="dash-chart-bars">
+                    <div style="height:42%"></div><div style="height:68%"></div><div style="height:55%"></div>
+                    <div style="height:82%"></div><div style="height:61%"></div><div style="height:90%"></div><div style="height:74%"></div>
+                  </div>
+                  <div class="dash-list">
+                    <div class="dash-list-item"><span class="dot green"></span>产品迭代 v3.2 已发布</div>
+                    <div class="dash-list-item"><span class="dot blue"></span>销售周报待 3 人确认</div>
+                    <div class="dash-list-item"><span class="dot orange"></span>数据备份完成 02:00</div>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <p>已有领先团队选择云帆</p>
+      <div class="trust-logos">
+        <span>华东智造</span><span>星链零售</span><span>远峰金融</span><span>蓝域医疗</span><span>启明教育</span><span>瀚海物流</span>
+      </div>
+    </section>
+
+    <section class="features" id="products">
+      <div class="section-head">
+        <span class="section-label">产品能力</span>
+        <h2>一个平台，覆盖协作全链路</h2>
+        <p>从任务拆解到数据复盘，云帆帮助团队减少工具切换，提升 37% 的平均交付效率（来源：2025 客户调研）。</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🔒</div>
+          <h3>企业级安全</h3>
+          <p>端到端加密、细粒度权限、操作审计日志，满足等保与 GDPR 合规要求。</p>
+          <ul class="feature-list"><li>SSO / LDAP 集成</li><li>数据脱敏与备份</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">⚡</div>
+          <h3>高效协作</h3>
+          <p>任务看板、日历、即时消息与文档同屏协作，跨部门信息不再断层。</p>
+          <ul class="feature-list"><li>5000 人在线会议</li><li>版本历史追溯</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">📊</div>
+          <h3>智能分析</h3>
+          <p>拖拽式 BI 报表，连接业务数据库，自动生成管理层周报与预警。</p>
+          <ul class="feature-list"><li>50+ 图表模板</li><li>API 开放接入</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🔗</div>
+          <h3>开放集成</h3>
+          <p>与钉钉、企业微信、飞书及主流 ERP/CRM 无缝对接，迁移成本低。</p>
+          <ul class="feature-list"><li>Webhook 自动化</li><li>开发者文档齐全</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">📱</div>
+          <h3>全端覆盖</h3>
+          <p>Web、Windows、macOS、iOS、Android 全平台支持，离线也能查看。</p>
+          <ul class="feature-list"><li>消息推送同步</li><li>移动端审批</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🛡️</div>
+          <h3>私有化部署</h3>
+          <p>支持公有云、专有云与本地机房部署，满足大型集团数据主权需求。</p>
+          <ul class="feature-list"><li>专属实施团队</li><li>定制 SLA 保障</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+      <div class="solutions-inner">
+        <div class="solutions-copy">
+          <span class="section-label">行业方案</span>
+          <h2>为不同规模团队量身定制</h2>
+          <p>无论是 20 人的创业团队，还是 5000 人的集团总部，云帆提供匹配的部署方案与最佳实践模板。</p>
+          <ul class="solution-list">
+            <li><strong>研发团队</strong> — 敏捷迭代、缺陷跟踪、发布流水线</li>
+            <li><strong>销售团队</strong> — 商机管理、合同审批、业绩看板</li>
+            <li><strong>职能部门</strong> — 考勤报销、知识库、制度发布</li>
+          </ul>
+        </div>
+        <div class="solutions-cards">
+          <div class="solution-card"><span>初创团队</span><strong>免费版</strong><p>最多 20 人 · 基础协作</p></div>
+          <div class="solution-card highlight"><span>成长型企业</span><strong>专业版</strong><p>无限项目 · 高级报表</p></div>
+          <div class="solution-card"><span>大型组织</span><strong>企业版</strong><p>私有化 · 专属支持</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="customers">
+      <div class="section-head">
+        <span class="section-label">客户评价</span>
+        <h2>他们这样说云帆</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <p>「上线云帆后，我们跨部门沟通邮件减少了 60%，项目延期率明显下降。」</p>
+          <footer><strong>陈思远</strong> · 华东智造 · 运营总监</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>「数据看板终于和业务系统打通了，管理层周会准备时间从半天缩短到 20 分钟。」</p>
+          <footer><strong>李婉清</strong> · 远峰金融 · 数据分析负责人</footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>「迁移过程有云帆客户成功团队全程陪同，两周内 800 人完成切换。」</p>
+          <footer><strong>王建国</strong> · 星链零售 · IT 总监</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="pricing-teaser" id="pricing">
+      <div class="pricing-inner">
+        <h2>透明定价，按需升级</h2>
+        <p>专业版 ¥49/人/月起 · 年付享 8 折 · 企业版请联系销售获取报价</p>
+        <button type="button" class="btn-primary btn-lg" id="pricingRegisterBtn">查看详情并注册</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>云帆科技</strong>
+          <p>上海市浦东新区张江路 888 号云帆大厦 12F</p>
+          <p>客服热线：400-888-0123 · support@yunfan.tech</p>
+        </div>
+        <div class="footer-col">
+          <h4>产品</h4>
+          <a href="#">项目管理</a><a href="#">文档协作</a><a href="#">数据分析</a>
+        </div>
+        <div class="footer-col">
+          <h4>资源</h4>
+          <a href="#">帮助中心</a><a href="#">开发者 API</a><a href="#">安全白皮书</a>
+        </div>
+        <div class="footer-col">
+          <h4>公司</h4>
+          <a href="#" id="aboutUsLinkFooter">关于我们</a><a href="#">加入我们</a><a href="#">隐私政策</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 云帆科技有限公司 · 沪ICP备2026012345号-1 · 沪公网安备31011502001234号</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 个人中心浮窗 -->
+  <div class="profile-popover hidden" id="profilePopover">
+    <div class="profile-popover-header">
+      <h3>个人中心</h3>
+      <button type="button" class="btn-close-sm" id="closeProfileBtn">×</button>
+    </div>
+    <div class="profile-popover-body">
+      <div class="profile-card" id="profileCard"></div>
+    </div>
+    <div class="profile-actions">
+      <button type="button" class="btn-danger" id="deleteProfileBtn">注销账号</button>
+    </div>
+  </div>
+
+  <!-- 注册界面 -->
+  <div id="registerOverlay" class="hidden">
+    <div class="register-panel">
+      <div class="register-topbar">
+        <h2>创建账号</h2>
+        <button type="button" class="btn-close" id="closeRegisterBtn" aria-label="关闭">×</button>
+      </div>
+
+      <div class="register-body">
+        <aside class="sidebar">
+          <h3>注册说明</h3>
+          <ul class="rules">
+            <li>所有字段均为必填项</li>
+            <li>请如实填写个人信息</li>
+            <li>注册过程受系统安全策略保护</li>
+          </ul>
+          <div class="progress-block">
+            <span>填写进度</span>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">0%</span>
+          </div>
+          <div class="sidebar-timer" id="timerBlock">
+            <span class="sidebar-timer-label">⏱ 注册时限</span>
+            <span class="sidebar-timer-display" id="timerDisplay">02:00</span>
+            <span class="sidebar-timer-hint" id="timerHint">超时将清空表单（大概）</span>
+          </div>
+          <button type="button" class="btn-debug-settings hidden" id="debugSettingsToggle">⚙ 参数设置</button>
+          <div class="debug-settings-panel hidden" id="debugSettingsPanel">
+            <div class="debug-settings-header">
+              <strong>调试参数</strong>
+              <button type="button" class="btn-close-sm" id="debugSettingsClose" aria-label="关闭">×</button>
+            </div>
+            <p class="debug-settings-note">标 * 的参数需刷新页面后对小游戏生效</p>
+            <div class="debug-settings-form" id="debugSettingsForm"></div>
+            <div class="debug-settings-actions">
+              <button type="button" class="btn-secondary btn-debug-save" id="debugSettingsSave">保存并应用</button>
+              <button type="button" class="btn-secondary" id="debugSettingsReset">恢复默认</button>
+            </div>
+          </div>
+        </aside>
+
+        <form class="register-form" id="registerForm" autocomplete="off">
+          <section class="field-card" data-field="name">
+            <div class="field-header"><h3>姓名</h3><span class="field-status" id="status-name">未完成</span></div>
+            <p class="field-desc">请从今日可用字库中选择汉字组成您的姓名（2~4 字）。</p>
+            <div class="char-pool" id="charPool"></div>
+            <div class="name-builder">
+              <div class="name-slots" id="nameSlots"></div>
+              <button type="button" class="btn-secondary" id="clearName">清空</button>
+            </div>
+            <input type="hidden" name="name" id="nameInput">
+          </section>
+
+          <section class="field-card" data-field="gender">
+            <div class="field-header"><h3>性别</h3><span class="field-status" id="status-gender">未完成</span></div>
+            <p class="field-desc">打砖块！击破上层砖块后，用球击中最底层性别砖块即为您的性别。</p>
+            <div class="game-panel">
+            <canvas id="genderCanvas" class="game-canvas" width="640" height="380" tabindex="0"></canvas>
+            </div>
+            <p class="hint-text" id="genderResult">移动鼠标控制挡板，点击发射小球。</p>
+            <input type="hidden" name="gender" id="genderInput">
+          </section>
+
+          <section class="field-card" data-field="country">
+            <div class="field-header"><h3>国家/地区</h3><span class="field-status" id="status-country">未完成</span></div>
+            <p class="field-desc">请选择国家，并完成国旗拼图验证。</p>
+            <div class="country-select" id="countrySelect"></div>
+            <div class="puzzle-area hidden" id="puzzleArea">
+              <p class="hint-text">请将拼图块拖拽至正确位置：</p>
+              <div class="puzzle-board" id="puzzleBoard"></div>
+              <button type="button" class="btn-secondary" id="shufflePuzzle">打乱拼图</button>
+            </div>
+            <input type="hidden" name="country" id="countryInput">
+          </section>
+
+          <section class="field-card" data-field="phone">
+            <div class="field-header"><h3>手机号</h3><span class="field-status" id="status-phone">未完成</span></div>
+            <p class="field-desc">坦克大战：在迷宫击毁数字坦克，按顺序收集 11 位手机号（WASD 移动，空格射击）。</p>
+            <div class="game-panel game-panel-tank">
+            <canvas id="tankCanvas" class="game-canvas" tabindex="0"></canvas>
+            </div>
+            <div class="phone-display" id="phoneDisplay">_ _ _ _ _ _ _ _ _ _ _</div>
+            <p class="hint-text" id="phoneHint"></p>
+            <button type="button" class="btn-secondary" id="confirmPhone">确认号码</button>
+            <button type="button" class="btn-secondary btn-reset-phone hidden" id="resetPhone">重新收集号码</button>
+            <input type="hidden" name="phone" id="phoneInput">
+          </section>
+
+          <section class="field-card" data-field="birthday">
+            <div class="field-header"><h3>生日</h3><span class="field-status" id="status-birthday">未完成</span></div>
+            <p class="field-desc">老式转盘电话：下方数字盘固定，拖动面板旋转，松手后读数窗对准的数字即为所拨一位（共 8 位）。</p>
+            <div id="birthdayDial"></div>
+            <input type="hidden" name="birthday" id="birthdayInput">
+          </section>
+
+          <section class="field-card" data-field="email">
+            <div class="field-header"><h3>邮箱</h3><span class="field-status" id="status-email">未完成</span></div>
+            <p class="field-desc">请倒序输入邮箱。随机追加的字符与输入相同，可逐字删除；正序预览为实际邮箱。</p>
+            <input type="text" id="emailInput" class="input-full" placeholder="从最后一个字符开始倒着输入">
+            <p class="hint-text" id="emailPreview">正序预览：</p>
+          </section>
+
+          <section class="field-card" data-field="password">
+            <div class="field-header"><h3>密码</h3><span class="field-status" id="status-password">未完成</span></div>
+            <p class="field-desc">请设置符合以下全部要求的密码：</p>
+            <ul class="password-rules" id="passwordRules">
+              <li data-rule="length">长度恰好 7 个字符</li>
+              <li data-rule="no-upper">不含大写字母</li>
+              <li data-rule="no-lower">不含小写字母</li>
+              <li data-rule="emoji">包含至少 1 个 emoji</li>
+              <li data-rule="space">包含 3 个连续空格</li>
+              <li data-rule="username">与用户名完全相同</li>
+              <li data-rule="common">不属于常见弱密码列表</li>
+            </ul>
+            <input type="text" id="usernameInput" class="input-full" placeholder="用户名">
+            <input type="text" id="passwordInput" class="input-full" placeholder="密码（须与用户名相同）">
+          </section>
+
+          <section class="field-card" data-field="captcha">
+            <div class="field-header"><h3>安全验证</h3><span class="field-status" id="status-captcha">未完成</span></div>
+            <p class="field-desc" id="captchaQuestion">请完成人机验证。</p>
+            <div class="captcha-grid" id="captchaGrid"></div>
+            <div class="captcha-actions">
+              <button type="button" class="btn-secondary" id="submitCaptcha">提交验证</button>
+            </div>
+            <div class="captcha-loading hidden" id="captchaLoading">
+              <div class="spinner"></div>
+              <span>正在验证，请稍候…</span>
+            </div>
+          </section>
+
+          <section class="field-card" data-field="avatar">
+            <div class="field-header"><h3>头像</h3><span class="field-status" id="status-avatar">未完成</span></div>
+            <p class="field-desc">吃豆人收集 7 种面部组件（含左右耳），每种多处分布；集齐后拖拽到右侧头像区。</p>
+            <div class="avatar-builder">
+              <canvas id="pacCanvas" class="game-canvas game-canvas-pac" width="560" height="400"></canvas>
+              <div class="avatar-right">
+                <div class="avatar-dropzone" id="avatarDropzone">
+                  <span class="dropzone-hint">集齐 7 个组件后拖入此区域</span>
+                </div>
+                <div class="avatar-parts" id="avatarParts"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="field-card" data-field="terms">
+            <div class="field-header"><h3>用户协议</h3><span class="field-status" id="status-terms">未完成</span></div>
+            <div class="terms-scroll" id="termsScroll">
+              <div class="terms-content" id="termsContent"></div>
+            </div>
+            <div class="terms-nav">
+              <button type="button" class="btn-secondary" id="prevPage" disabled>上一页</button>
+              <span id="termsPageInfo">第 1 / 5 页</span>
+              <button type="button" class="btn-secondary" id="nextPage">下一页</button>
+            </div>
+            <label class="terms-check">
+              <input type="checkbox" id="termsCheckbox" disabled>
+              我已阅读并同意本页协议（需滚动至底部）
+            </label>
+          </section>
+
+          <div class="submit-area" id="submitArea">
+            <div class="submit-flee-zone" id="submitFleeZone">
+              <button type="submit" class="btn-primary btn-submit" id="submitBtn" disabled>完成注册</button>
+            </div>
+            <p class="submit-hint" id="submitHint">请完成全部必填项</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="gateAlertModal" role="alertdialog" aria-modal="true" aria-labelledby="gateAlertTitle">
+    <div class="modal-content gate-alert-modal">
+      <div class="gate-alert-icon" id="gateAlertIcon" aria-hidden="true"></div>
+      <h2 class="gate-alert-title" id="gateAlertTitle"></h2>
+      <p class="gate-alert-msg" id="gateAlertMsg"></p>
+      <div class="gate-alert-actions">
+        <button type="button" class="btn-primary btn-lg" id="gateAlertPrimary"></button>
+        <button type="button" class="btn-secondary" id="gateAlertClose">我知道了</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="successModal">
+    <div class="modal-content modal-wide modal-success">
+      <div class="modal-header">
+        <h2>注册成功</h2>
+        <button type="button" class="btn-close-sm" id="closeSuccessBtn" aria-label="关闭">×</button>
+      </div>
+      <p class="modal-lead">欢迎加入云帆科技！</p>
+      <div class="profile-card profile-card-success" id="successProfileCard"></div>
+      <button type="button" class="btn-primary" id="closeModal">进入平台</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="games.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
